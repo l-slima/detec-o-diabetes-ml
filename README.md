@@ -41,31 +41,13 @@ O foco principal é **maximizar o recall para a classe positiva** (diagnóstico 
 ## 📊 Resultados
 
 ### 🔹 XGBoost
-Relatório de classificação - XGBoost
-              precision    recall  f1-score   support
 
-           0       0.99      0.90      0.94     17525
-           1       0.48      0.92      0.63      1701
+<img width="457" height="218" alt="image" src="https://github.com/user-attachments/assets/129fdc94-191e-4eee-b182-acfc09f36ae2" />
 
-    accuracy                           0.90     19226
-   macro avg       0.73      0.91      0.79     19226
-weighted avg       0.95      0.90      0.92     19226
-
-AUC ROC - XGBoost: 0.9778
 
 ### 🔹 Random Forest
 
-Relatório de classificação - Random Forest
-              precision    recall  f1-score   support
-
-           0       0.99      0.90      0.94     17525
-           1       0.46      0.90      0.61      1701
-
-    accuracy                           0.90     19226
-   macro avg       0.73      0.90      0.78     19226
-weighted avg       0.94      0.90      0.91     19226
-
-AUC ROC - Random Forest: 0.9726
+<img width="457" height="218" alt="image" src="https://github.com/user-attachments/assets/50816b22-6d5f-4f3f-933c-fa9dfe8fc632" />
 
 ---
 
