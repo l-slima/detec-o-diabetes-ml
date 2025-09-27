@@ -1,44 +1,49 @@
-# Detecção de Diabetes com Machine Learning
+# Diabetes Detection with Machine Learning
 
-## Objetivo
-Este projeto tem como objetivo desenvolver e comparar modelos de aprendizado de máquina para prever a presença de diabetes a partir de dados clínicos e demográficos.
+## Objective
 
-O foco principal é **maximizar o recall para a classe positiva** (diagnóstico de diabetes), garantindo que o maior número possível de casos seja identificado, sem perder a performance global do modelo.
+This project aims to develop and compare machine learning models to predict the presence of diabetes based on clinical and demographic data.
 
----
-
-## Dados Utilizados
-- **Variáveis**:
-  - `Nivel_HbA1c` — nível médio de glicose no sangue nos últimos 3 meses
-  - `nivel_glicose_sangue` — glicose medida no momento
-  - `Idade` — idade do paciente
-  - `IMC` — índice de massa corporal
-  - `Hipertensão`, `Doenca_cardiaca` — indicadores binários
-  - `Gênero` — masculino/feminino
-  - `Historico_fumante` — sim/não
+The main focus is **maximizing recall for the positive class** (diabetes diagnosis), ensuring that as many cases as possible are identified, while maintaining the model’s overall performance.
 
 ---
 
-##  Metodologia
-1. **Pré-processamento**:
-   - Tratamento de valores ausentes
-   - Codificação de variáveis categóricas
-   - Balanceamento da base usando `scale_pos_weight`
+## Data Used
 
-2. **Modelos testados**:
-   - **XGBoost**
-   - **Random Forest**
-   - **Rede Neural (Keras/TensorFlow)**
+* **Variables**:
 
-3. **Métricas de avaliação**:
-   - `Precision`, `Recall`, `F1-score`
-   - `AUC ROC`
-   - Matriz de confusão
-   - Importância das variáveis (para modelos baseados em árvore)
+  * `HbA1c_Level` — average blood glucose level over the past 3 months
+  * `Blood_Glucose_Level` — glucose measured at the moment
+  * `Age` — patient’s age
+  * `BMI` — body mass index
+  * `Hypertension`, `Heart_Disease` — binary indicators
+  * `Gender` — male/female
+  * `Smoking_History` — yes/no
 
 ---
 
-## 📊 Resultados
+## Methodology
+
+1. **Preprocessing**:
+
+   * Handling missing values
+   * Encoding categorical variables
+   * Dataset balancing using `scale_pos_weight`
+
+2. **Models tested**:
+
+   * **XGBoost**
+   * **Random Forest**
+   * **Neural Network (Keras/TensorFlow)**
+
+3. **Evaluation metrics**:
+
+   * `Precision`, `Recall`, `F1-score`
+   * `ROC AUC`
+   * Confusion matrix
+   * Feature importance (for tree-based models)
+
+## 📊 Results
 
 ### 🔹 XGBoost
 
@@ -51,7 +56,10 @@ O foco principal é **maximizar o recall para a classe positiva** (diagnóstico 
 
 ---
 
-## 📈 Comparação Geral
-- Ambos os modelos tiveram **AUC ROC acima de 0.97**.
-- O **XGBoost** apresentou **melhor recall** na classe positiva (identificação de casos de diabetes).
-- A **Random Forest** teve performance próxima, mas com recall um pouco inferior.
+
+## 📈 Overall Comparison
+
+* Both models achieved an **AUC ROC above 0.97**.
+* **XGBoost** showed **better recall** for the positive class (diabetes identification).
+* **Random Forest** performed similarly, but with slightly lower recall.
+
